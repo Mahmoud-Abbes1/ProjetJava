@@ -20,5 +20,15 @@ public class TestProduit {
 		
 		Appareil appareil = new Appareil("AP", "Camera", 40, "Canon", "200mp");
 		System.out.println(appareil);
+		
+		System.out.println("\nPizza\n");
+		LigneLiv L1 = new LigneLiv(espadrille,12);
+		L1.afficher();
+		System.out.println("\n\033[37m------- Produit -------\033[0m");
+		System.out.println("\n" + L1.getProduit());
+		System.out.println("\n\033[37m------- Total -------\033[0m");
+		System.out.println("\n\u001B[1mPrix Total : \u001B[0m" + L1.prixTotal());
+		
+
 	}
 }
